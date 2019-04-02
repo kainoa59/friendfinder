@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Friend Finder</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <div class="row">
+                <h3>Your info:</h3>
+            </div>
+            <div class="row">
+                <div>
+                    <h5>Name</h5>
+                    <input type="text" class="validate" placeholder="Your Name" id="userName">
+                </div>
+                <div>
+                    <h5>Link to Photo Image</h5>
+                    <input type="text" class="validate" placeholder="Photo Link" id="userPhoto">
+                </div>
+            </div>
+            <div class="row">
+                <br>
+                <br>
+                <div class="form-group">
+                    <div class="row">
+                        <h4>Question 1: Do you enjoy being outdoors?</h4>
+                        <select class="form-control" id="question1">
+                            <option value="" disabled selected>Please select one</option>
+                            <option value="1">1 (Strong No)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strong Yes)</option>
+                        </select>
+                    </div>
+
+                    <div class="row">
+                        <h4>Question 2: Do you enjoy exercising?</h4>
+                        <select class="form-control" id="question2">
+                            <option value="" disabled selected>Please select one</option>
+                            <option value="1">1 (Strong No)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strong Yes)</option>
+                        </select>
+                    </div>
+
+                    <div class="row">
+                        <h4>Question 3: Do you enjoy playing video games?</h4>
+                        <select class="form-control" id="question3">
+                            <option value="" disabled selected>Please select one</option>
+                            <option value="1">1 (Strong No)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strong Yes)</option>
+                        </select>
+                    </div>
+
+                    <div class="row">
+                        <h4>Question 4: Do you feel you are artistic?</h4>
+                        <select class="form-control" id="question4">
+                            <option value="" disabled selected>Please select one</option>
+                            <option value="1">1 (Strong No)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strong Yes)</option>
+                        </select>
+                    </div>
+
+                    <div class="row">
+                        <h4>Question 5: Do you like to watch horror movies?</h4>
+                        <select class="form-control" id="question5">
+                            <option value="" disabled selected>Please select one</option>
+                            <option value="1">1 (Strong No)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strong Yes)</option>
+                        </select>
+                    </div>
+
+                    <div class="row">
+                        <h4>Question 6: Do you stay up late?</h4>
+                        <select class="form-control" id="question6">
+                            <option value="" disabled selected>Please select one</option>
+                            <option value="1">1 (Strong No)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strong Yes)</option>
+                        </select>
+                    </div>
+
+                    <div class="row">
+                        <h4>Question 7: Do you like to cook?</h4>
+                        <select class="form-control" id="question7">
+                            <option value="" disabled selected>Please select one</option>
+                            <option value="1">1 (Strong No)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strong Yes)</option>
+                        </select>
+                    </div>
+
+                    <div class="row">
+                        <h4>Question 8: Do you like playing board games?</h4>
+                        <select class="form-control" id="question8">
+                            <option value="" disabled selected>Please select one</option>
+                            <option value="1">1 (Strong No)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strong Yes)</option>
+                        </select>
+                    </div>
+
+                    <div class="row">
+                        <h4>Question 9: Do you like going out to eat?</h4>
+                        <select class="form-control" id="question9">
+                            <option value="" disabled selected>Please select one</option>
+                            <option value="1">1 (Strong No)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strong Yes)</option>
+                        </select>
+                    </div>
+
+                    <div class="row">
+                        <h4>Question 10: Do you like to wake up early?</h4>
+                        <select class="form-control" id="question10">
+                            <option value="" disabled selected>Please select one</option>
+                            <option value="1">1 (Strong No)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strong Yes)</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center">
+                <button id="submitBtn" type="submit" class="btn btn-success btn-lg">Submit</button>
+            </div>
+        </div>
+        </div>
+    </main>
+
+    <footer>
+        <ul>
+            <li><a href="/survey">Survey</a></li>
+            <li><a href="/api/friends">API Friends List</a></li>
+        </ul>
+    </footer>
+
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <h4>Closest Friend Match</h4>
+            <div class="divider"></div>
+            <h5 id="userMatch"></h5>
+            <img id="userMatchImage" class="materialboxed" width="650" src="">
+        </div>
+        <div class="modal-footer">
+            <a href="/survey" class="modal-action modal-close waves-effect waves-green btn-flat">Fill Again!</a>
+        </div>
+    </div>
+</body>
+</html>
+
+<script>
+    $('#submitBtn').on('click', function (event) {
+        console.log("hello");
+        event.preventDefault();
+        var userInput = {
+            name: $('#userName').val().trim(),
+            photo: $('#userPhoto').val().trim(),
+            scores: [
+                $('#question1').val().trim(),
+                $('#question2').val().trim(),
+                $('#question3').val().trim(),
+                $('#question4').val().trim(),
+                $('#question5').val().trim(),
+                $('#question6').val().trim(),
+                $('#question7').val().trim(),
+                $('#question8').val().trim(),
+                $('#question9').val().trim(),
+                $('#question10').val().trim()
+            ]
+        };
+        $.post('/api/friends', userInput)
+            .done(function (data) {
+                $('#userMatch').html(data.matchName);
+                $("#userMatchImage").attr("src", data.matchImage);
+                $('.modal').modal('open');
+            });
+    });
+</script>
